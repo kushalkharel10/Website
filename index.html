@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IFA - Institute for Future Advancement</title>
+  <title>KUSHAL - Pioneer of Progress</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
@@ -13,7 +13,10 @@
   <!-- Navbar -->
   <header>
     <nav class="navbar">
-      <div class="logo">IFA</div>
+      <div class="logo">KUSHAL</div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
       <ul class="nav-links">
         <li><a href="#mission">Mission</a></li>
         <li><a href="#vision">Vision</a></li>
@@ -26,47 +29,57 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content" data-aos="fade-up">
-      <h1>INSTITUTE FOR FUTURE ADVANCEMENT</h1>
-      <p>Guiding you into a future built with purpose and precision.</p>
+      <h1>KUSHAL - Pioneer of Progress</h1>
+      <p>Leading innovation and forging the future with vision and courage.</p>
     </div>
   </section>
 
   <!-- Mission -->
   <section id="mission" class="section" data-aos="fade-right">
     <h2>Our Mission</h2>
-    <p>To empower students to become agents of change through visionary leadership, innovation, and futuristic education.</p>
+    <p>To empower individuals to break barriers and create groundbreaking solutions that shape tomorrow.</p>
   </section>
 
   <!-- Vision -->
   <section id="vision" class="section" data-aos="fade-left">
     <h2>Our Vision</h2>
-    <p>To build a global community of leaders and thinkers who drive the world forward with knowledge, ethics, and bold action.</p>
+    <p>Building a legacy of innovation, leadership, and unstoppable progress across the globe.</p>
   </section>
 
   <!-- Future -->
   <section id="future" class="section" data-aos="zoom-in">
     <h2>The Future We See</h2>
-    <p>Where education isn't limited to classrooms. Where technology, creativity, and courage combine to build the next era of humanity.</p>
+    <p>A world where bold ideas become realities, and pioneers inspire generations.</p>
   </section>
 
   <!-- Contact / Footer -->
   <footer id="contact">
     <div class="footer-content" data-aos="fade-up">
       <h3>Get in Touch</h3>
-      <p>Email: contact@ifa.org</p>
-      <p>Follow us on social media:</p>
+      <p>Email: contact@kushal.com</p>
+      <p>Follow me on social media:</p>
       <div class="socials">
-        <a href="#">Instagram</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Twitter</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
       </div>
     </div>
-    <p class="copyright">© 2025 IFA. All rights reserved.</p>
+    <p class="copyright">© 2025 KUSHAL. All rights reserved.</p>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init();
+
+    // Hamburger menu toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-links-visible');
+      navToggle.classList.toggle('nav-toggle-active');
+    });
   </script>
 </body>
 </html>
+
